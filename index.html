@@ -1,0 +1,40 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css" />
+  <title>Front-end</title>
+</head>
+
+<body>
+  <section id="principal">
+    <h1>Fullstack Master</h1>
+    <h2 class="titulo outroTitulo">Sobre</h2>
+    <p><a href="bootstrap.html">Bootstrap</a></p>
+  </section>
+  <div class="box">
+    <span>Texto</span>
+  </div>
+  <button id="btn" type="button">Clique</button>
+  <script src="jquery-3.6.0.min.js"></script>
+  <script>
+    $(function () {
+      console.log('loaded')
+      $('#btn').click(function () {
+        $('body').append('<p>Olá mundo</p>')
+        $('.box').slideToggle()
+      })
+    })
+    /*document.addEventListener('DOMContentLoaded', () => {
+      console.log('Content loaded')
+      console.log(document.getElementById('principal').innerHTML)
+      document.getElementById('btn').addEventListener('click', () => {
+        console.log('clicou!')
+        const p = document.createElement('p')
+        p.innerHTML = 'Olá Mundo'
+        document.body.appendChild(p)
+      })
+    })*/
+  </script>
+</body>
+
+</html>
